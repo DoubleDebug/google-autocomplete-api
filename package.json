@@ -1,0 +1,19 @@
+{
+    "name": "google-suggestions",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "Web scraping google autocomplete suggestions",
+    "main": "./src/index.js",
+    "scripts": {
+        "start": "node ./src/index.js",
+        "dev": "nodemon ./src/index.js"
+    },
+    "author": "DoubleDebug",
+    "license": "ISC",
+    "devDependencies": {
+        "nodemon": "^2.0.16"
+    },
+    "dependencies": {
+        "puppeteer": "^14.1.0"
+    }
+}
