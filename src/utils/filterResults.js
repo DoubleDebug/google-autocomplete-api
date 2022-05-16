@@ -3,5 +3,5 @@ export function filterResults(query, results) {
     const filtered = results
         .filter((r) => r !== '') // filter empty results
         .filter((r) => regex.test(r)); // remove result metadata (movie info, book info, etc)
-    return new Set(filtered); // remove duplicates
+    return Array.from(new Set(filtered)); // remove duplicates
 }

@@ -1,5 +1,5 @@
 import puppeteer from 'puppeteer';
-import { filterResults } from './utils/filterResults.js';
+import { filterResults } from '../utils/filterResults.js';
 
 export async function getGoogleSuggestions(query) {
     // setup
