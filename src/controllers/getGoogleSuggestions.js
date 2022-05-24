@@ -21,6 +21,9 @@ export async function getGoogleSuggestions(query) {
         if (!resultElements) return [];
         return Array.from(resultElements).map((el) => el.textContent);
     });
+    
+    // cleanup
+    browser.close();
 
     // filter results
     return filterResults(query, results);
